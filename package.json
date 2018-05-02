@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "$(yarn bin)/gulp"
+    "compile": "$(yarn bin)/gulp compile-mail",
+    "scaffold": "$(yarn bin)/gulp scaffold --name"
   },
   "author": "subal f <fsubal1102@gmail.com>",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "babel-register": "^6.24.1",
     "gulp": "^3.9.1",
     "json5": "^0.5.1",
+    "minimist": "^1.2.0",
     "pug": "^2.0.0-rc.2"
   }
 }
