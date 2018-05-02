@@ -56,6 +56,10 @@ gulp.task('scaffold', () => {
   const argv = minimist(process.argv.slice(2));
   const { name } = argv;
 
+  if (path.basename(name) !== name) {
+    throw new Error(`[!] ${name} is not valid name (must be a valid filename).`);
+  }
+
   fs.writeFileSync(`./src/${name}.pug`, createPug(name), { flag: 'wx' });
   fs.writeFileSync(`./src/css/${name}.css`, '@charset "utf-8";', { flag: 'wx' });
   fs.writeFileSync(`./src/model/${name}.json5`, '{}', { flag: 'wx' });
