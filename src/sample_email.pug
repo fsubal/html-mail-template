@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+html
+  head
+    meta(content='ja', http-equiv='Content-Language')
+    meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+    meta(content='text/css', http-equiv='Content-Style-Type')
+    link(rel='stylesheet', type='text/css',href='../src/css/reset.css')
+    link(rel='stylesheet', type='text/css',href='../src/css/sample_email.css')
+    title サンプルメールだよ
+  body
+    table.section--header
+      tr
+        th.section--header__logo
+          a(href='https://example.com', target='_blank', rel='noopener')
+            | [ロゴ]
+        th.section--header__description
+          | キャプション
+    table.section--message
+      tr.section--message__user-name
+        td
+          | こんにちは！！
+      each announce in announces
+        tr.section--message__heading
+          th
+            = announce.title
+            | のお知らせです！！
+    

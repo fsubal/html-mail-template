@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.1)
+      public_suffix (~> 2.0, >= 2.0.2)
+    css_parser (1.5.0)
+      addressable
+    htmlentities (4.3.4)
+    mini_portile2 (2.1.0)
+    nokogiri (1.7.0.1)
+      mini_portile2 (~> 2.1.0)
+    premailer (1.10.4)
+      addressable
+      css_parser (>= 1.4.10)
+      htmlentities (>= 4.0.0)
+    public_suffix (2.0.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri
+  premailer
+
+BUNDLED WITH
+   1.14.4

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body {
+  background: #eee;
+  padding: 0;
+}
+
+th, td {
+  vertical-align: middle;
+}
+
+.section--header {
+  width: 100%;
+  background: #fff;
+  color: #13A7FF;
+  font-weight: bold;
+}
+
+.section--header__logo {
+  text-align: left;
+  padding: 8px 0 8px 32px;
+}
+
+.section--header__description {
+  font-size: 16px;
+  text-align: right;
+  font-weight: bold;
+  padding: 8px 32px 8px 0;
+}
+
+.section--message {
+  width: 100%;
+}
+
+.section--message__user-name td {
+  padding: 16px 32px 0 32px;
+  font-weight: bold;
+}
+
+.section--message__heading th {
+  padding: 16px 32px 0 32px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
