@@ -32,7 +32,7 @@ th, td {
   width: 100%;
 }
 
-.section--message__user-name td {
+.section--message__greeting td {
   padding: 16px 32px 0 32px;
   font-weight: bold;
 }
