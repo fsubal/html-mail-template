@@ -6,14 +6,16 @@ GEM
     css_parser (1.5.0)
       addressable
     htmlentities (4.3.4)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.10)
-      mini_portile2 (~> 2.4.0)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.2)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     premailer (1.10.4)
       addressable
       css_parser (>= 1.4.10)
       htmlentities (>= 4.0.0)
     public_suffix (2.0.5)
+    racc (1.6.0)
 
 PLATFORMS
   ruby
